@@ -1,9 +1,12 @@
+
+
 /* Texto general */
 body {
     font-family: 'Raleway', sans-serif;
     min-width: 320px;
     background-color: black;
     /* Límite mínimo global */
+    overflow-x: hidden;
 }
 
 /* SECCION INTRODUCTORIA */
@@ -17,49 +20,72 @@ body {
 }
 
 .intro-container {
-    max-width: 1600px;
+    max-width: 1200px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 120px;
+    gap: 80px;
     align-items: center;
     padding: 0 20px;
 }
 
 .intro-columna h1 {
-    font-size: 80px;
-    margin-bottom: 40px;
+    font-size: 60px;
+    margin-bottom: 30px;
     color: #4A2C1D;
     font-family: 'Luckiest Guy', cursive;
 }
 
 .intro-columna p {
-    font-size: 26px;
+    font-size: 20px;
     line-height: 1.6;
     color: #333;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .btn-adoptar-ahora {
     background-color: #4A2C1D;
     color: white;
-    padding: 25px 50px;
+    padding: 18px 35px;
     border: none;
     border-radius: 30px;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .btn-adoptar-ahora:hover {
     background-color: #6B3D2A;
 }
 
+.btn-volver {
+    background-color: #4A2C1D;
+    color: white;
+    padding: 18px 35px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 40px;
+}
+
+.btn-volver:hover {
+    background-color: #6B3D2A;
+}
+
+.intro-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
 .estadisticas {
     display: flex;
-    gap: 50px;
+    gap: 35px;
     justify-content: flex-start;
 }
 
@@ -68,14 +94,14 @@ body {
 }
 
 .numero {
-    font-size: 56px;
+    font-size: 42px;
     font-weight: bold;
     color: #4A2C1D;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .descripcion {
-    font-size: 18px;
+    font-size: 14px;
     color: #666;
     font-weight: 500;
 }
@@ -83,30 +109,30 @@ body {
 .intro-columna img {
     width: 100%;
     height: auto;
-    max-width: 700px;
+    max-width: 500px;
 }
 
 /* SECCION CATALOGO */
 .seccion-catalogo {
-    padding: 60px 20px 20px 20px;
+    padding: 40px 15px 15px 15px;
     display: flex;
     justify-content: center;
     background-color: #D5B893;
 }
 
 .catalogo-container {
-    max-width: 1600px;
+    max-width: 1200px;
     width: 100%;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 3px 25px 4px rgba(0, 0, 0, 0.51);
-    padding: 40px;
+    padding: 30px;
     text-align: center;
 }
 
 .catalogo-container h1 {
-    font-size: 48px;
-    margin-bottom: 40px;
+    font-size: 36px;
+    margin-bottom: 30px;
     color: #4A2C1D;
     font-family: 'Luckiest Guy', cursive;
 }
@@ -114,8 +140,8 @@ body {
 .catalogo-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    padding: 0 20px;
+    gap: 20px;
+    padding: 0 15px;
 }
 
 /* TARJETA MASCOTA */
@@ -133,7 +159,7 @@ body {
 
 .mascota-imagen {
     width: 100%;
-    height: 250px;
+    height: 200px;
     overflow: hidden;
     position: relative;
 }
@@ -147,47 +173,50 @@ body {
 
 .estado-adopcion {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 8px;
+    right: 8px;
     background-color: #2D5A3D;
     color: white;
-    padding: 5px 10px;
-    border-radius: 15px;
-    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 10px;
     font-weight: 600;
     text-transform: uppercase;
 }
 
 .mascota-info {
-    padding: 20px;
+    padding: 15px;
     text-align: left;
 }
 
 .mascota-info h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 18px;
+    margin-bottom: 8px;
     color: #4A2C1D;
     font-family: 'Luckiest Guy', cursive;
 }
 
 .mascota-info p {
-    font-size: 16px;
-    margin-bottom: 8px;
+    font-size: 14px;
+    margin-bottom: 6px;
     color: #333;
 }
 
 .mascota-info p:last-of-type {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .btn-adoptar {
     width: 100%;
-    padding: 12px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    margin-left: -15px;
+    margin-right: -15px;
     background-color: #4A2C1D;
     color: white;
     border: none;
-    border-radius: 10px;
-    font-size: 16px;
+    border-radius: 8px;
+    font-size: 14px;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -202,21 +231,22 @@ body {
     width: 100%;
     background-color: #283646;
     color: white;
-    padding: 60px 0 0 0;
+    padding: 40px 0 0 0;
     display: flex;
     justify-content: center;
     position: relative;
 }
 
 .footer-container {
-    max-width: 1400px;
+    max-width: 1000px;
     width: 100%;
     min-width: 320px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    gap: 40px;
-    padding: 0 40px 60px 40px;
+    gap: 30px;
+    padding: 0 30px 40px 30px;
     align-items: start;
+    margin: 0 auto;
 }
 
 /* Columna 1: Logo en círculo blanco */
@@ -227,8 +257,8 @@ body {
 }
 
 .footer-logo-circle {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     background-color: white;
     border-radius: 50%;
     display: flex;
@@ -238,7 +268,7 @@ body {
 }
 
 .footer-logo-circle img {
-    width: 100px;
+    width: 80px;
     height: auto;
 }
 
@@ -246,13 +276,13 @@ body {
 .footer-columna2 {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px;
     align-items: center;
 }
 
 .footer-links {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     justify-content: center;
     width: 100%;
 }
@@ -260,7 +290,7 @@ body {
 .footer-links a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     transition: color 0.3s ease;
 }
@@ -271,13 +301,13 @@ body {
 
 .footer-redes {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     justify-content: center;
 }
 
 .red-social {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -299,7 +329,7 @@ body {
 }
 
 .footer-copyright p {
-    font-size: 14px;
+    font-size: 12px;
     margin: 0;
     color: white;
 }
@@ -344,11 +374,13 @@ h6 {
 
 .modal-content {
     background-color: white;
-    margin: 5% auto;
+    margin: 2% auto 5% auto;
     padding: 0;
     border-radius: 20px;
     width: 90%;
-    max-width: 700px;
+    max-width: 900px;
+    max-height: 90vh;
+    overflow-y: auto;
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5);
     animation: modalFadeIn 0.3s ease-out;
 }
@@ -365,29 +397,17 @@ h6 {
 }
 
 .close {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.close:hover,
-.close:focus {
-    color: #4A2C1D;
+    display: none;
 }
 
 .modal-body {
     display: flex;
-    padding: 25px;
-    gap: 25px;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
 }
 
 .modal-image {
-    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -395,36 +415,34 @@ h6 {
 
 .modal-image img {
     width: 100%;
-    max-width: 280px;
+    max-width: 200px;
     height: auto;
     border-radius: 15px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .modal-text {
-    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .modal-text h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
+    font-size: 24px;
+    margin-bottom: 5px;
     color: #4A2C1D;
     font-family: 'Luckiest Guy', cursive;
 }
 
 .modal-text p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
     color: #333;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 .modal-text h3 {
-    font-size: 20px;
-    margin: 12px 0 6px 0;
+    font-size: 16px;
+    margin: 6px 0 3px 0;
     color: #4A2C1D;
     font-family: 'Luckiest Guy', cursive;
 }
@@ -437,12 +455,12 @@ h6 {
 
 .btn-cancelar {
     flex: 1;
-    padding: 12px 20px;
+    padding: 10px 15px;
     background-color: #ccc;
     color: #333;
     border: none;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -454,12 +472,12 @@ h6 {
 
 .btn-solicitar {
     flex: 1;
-    padding: 12px 20px;
+    padding: 10px 15px;
     background-color: #4A2C1D;
     color: white;
     border: none;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;

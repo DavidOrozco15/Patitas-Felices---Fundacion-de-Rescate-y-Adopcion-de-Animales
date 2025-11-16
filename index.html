@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patitas Felices</title>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/tablet.css">
-    <link rel="stylesheet" href="/css/celular.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/celular.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,27 +17,27 @@
 
 </head>
 
-<body>
+<body id="top">
     <section class="hero">
         <div class="hero-container">
 
             <!-- Columna izquierda -->
             <div class="hero-left">
                 <div class="hero-ellipse">
-                    <img src="/img/gato.png" alt="Gato">
+                <img src="img/gato.png" alt="Gato">
                 </div>
             </div>
 
             <!-- Columna derecha -->
             <div class="hero-right">
-                <img src="/img/logo.png" alt="Logo Fundación" class="hero-logo">
+                <img src="img/logo.png" alt="Logo Fundación" class="hero-logo">
 
                 <h2 class="hero-slogan">
                     UNA HUELLA A LA VEZ,<br>
                     CONSTRUIMOS ESPERANZA.
                 </h2>
 
-                <button class="hero-btn">Conoce nuestro movimiento 🐾</button>
+                <button class="hero-btn" onclick="document.querySelector('#seccion-somos').scrollIntoView({behavior: 'smooth'})">Conoce nuestro movimiento 🐾</button>
             </div>
 
         </div>
@@ -85,7 +85,7 @@
         </div>
     </section>
 
-    <section class="seccion-somos">
+    <section class="seccion-somos" id="seccion-somos">
         <div class="seccion-somos-container">
             <!-- Animales destacados -->
             <div class="animales-destacados">
@@ -130,17 +130,17 @@
 
             <!-- Botones de acción -->
             <div class="acciones-botones">
-                <button class="boton-accion">
+                <button class="boton-accion" onclick="window.location.href='catalogo.html'">
                     <img src="/img/adopta.png" alt="Adopta">
                 </button>
-                <button class="boton-accion">
+                <button class="boton-accion" onclick="document.querySelector('.seccion-galeria').scrollIntoView({behavior: 'smooth'})">
                     <img src="/img/voluntariado.png" alt="Voluntariado">
                 </button>
-                <button class="boton-accion">
+                <button class="boton-accion" onclick="window.location.href='contacto.html'">
                     <img src="/img/donaciones.png" alt="Donaciones">
                 </button>
-                <button class="boton-accion">
-                    <img src="/img/cuidados.png" alt="Cuidados">
+                <button class="boton-accion" onclick="document.querySelector('footer').scrollIntoView({behavior: 'smooth'})">
+                    <img src="/img/contacto.png" alt="Cuidados">
                 </button>
             </div>
         </div>
@@ -170,24 +170,24 @@
         </div>
     </section>
 
-    <section class="seccion-galeria">
+    <section class="seccion-galeria" id="galeria">
         <div class="galeria-container">
             <!-- Columna izquierda - Imagen grande -->
             <div class="galeria-izquierda">
-                <img src="/img/rescate1.jpg" alt="Imagen grande">
+                <img src="img/voluntario1.jpg" alt="Imagen grande">
             </div>
 
             <!-- Columna derecha - Mosaico de 4 imágenes -->
             <div class="galeria-derecha">
-                <img src="/img/rescate2.jpg" alt="Imagen 1">
-                <img src="/img/rescate3.jpg" alt="Imagen 2">
-                <img src="/img/rescate4.jpg" alt="Imagen 3">
-                <img src="/img/rescate5.jpg" alt="Imagen 4">
+                <img src="img/voluntario2.jpg" alt="Imagen 1">
+                <img src="img/voluntario3.jpg" alt="Imagen 2">
+                <img src="img/voluntario4.jpg" alt="Imagen 3">
+                <img src="img/voluntario5.jpg" alt="Imagen 4">
             </div>
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer-container">
             <!-- Columna 1: Logo en círculo blanco -->
             <div class="footer-columna1">
@@ -199,26 +199,26 @@
             <!-- Columna 2: Links de texto, redes sociales, copyright -->
             <div class="footer-columna2">
                 <div class="footer-links">
-                    <a href="#">Adopta</a>
-                    <a href="#">Voluntariado</a>
-                    <a href="#">Donaciones</a>
-                    <a href="#">Contacto</a>
-                    <a href="#">Inicio</a>
+                    <a href="catalogo.html">Adopta</a>
+                    <a href="#galeria">Voluntariado</a>
+                    <a href="contacto.html">Donaciones</a>
+                    <a href="#footer">Contacto</a>
+                    <a href="#top">Inicio</a>
                 </div>
                 <div class="footer-redes">
-                    <a href="#" class="red-social">
+                    <a href="https://www.facebook.com/patitasfelices" class="red-social" target="_blank" rel="noopener noreferrer">
                         <img src="/img/facebook.png" alt="Facebook">
                     </a>
-                    <a href="#" class="red-social">
+                    <a href="https://www.instagram.com/patitasfelices" class="red-social" target="_blank" rel="noopener noreferrer">
                         <img src="/img/instagram.png" alt="Instagram">
                     </a>
-                    <a href="#" class="red-social">
+                    <a href="https://wa.me/1234567890" class="red-social" target="_blank" rel="noopener noreferrer">
                         <img src="/img/whatsapp.png" alt="WhatsApp">
                     </a>
-                    <a href="#" class="red-social">
+                    <a href="https://www.tiktok.com/@patitasfelices" class="red-social" target="_blank" rel="noopener noreferrer">
                         <img src="/img/tiktok.png" alt="TikTok">
                     </a>
-                    <a href="#" class="red-social">
+                    <a href="https://twitter.com/patitasfelices" class="red-social" target="_blank" rel="noopener noreferrer">
                         <img src="/img/x.png" alt="X (Twitter)">
                     </a>
                 </div>
