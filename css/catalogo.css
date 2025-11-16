@@ -1,0 +1,479 @@
+/* Texto general */
+body {
+    font-family: 'Raleway', sans-serif;
+    min-width: 320px;
+    background-color: black;
+    /* Límite mínimo global */
+}
+
+/* SECCION INTRODUCTORIA */
+.seccion-intro {
+    width: 100%;
+    height: 100vh;
+    background: #D5B893;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-container {
+    max-width: 1600px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 120px;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.intro-columna h1 {
+    font-size: 80px;
+    margin-bottom: 40px;
+    color: #4A2C1D;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.intro-columna p {
+    font-size: 26px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.btn-adoptar-ahora {
+    background-color: #4A2C1D;
+    color: white;
+    padding: 25px 50px;
+    border: none;
+    border-radius: 30px;
+    font-size: 26px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 60px;
+}
+
+.btn-adoptar-ahora:hover {
+    background-color: #6B3D2A;
+}
+
+.estadisticas {
+    display: flex;
+    gap: 50px;
+    justify-content: flex-start;
+}
+
+.estadistica {
+    text-align: center;
+}
+
+.numero {
+    font-size: 56px;
+    font-weight: bold;
+    color: #4A2C1D;
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    font-size: 18px;
+    color: #666;
+    font-weight: 500;
+}
+
+.intro-columna img {
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+}
+
+/* SECCION CATALOGO */
+.seccion-catalogo {
+    padding: 60px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #D5B893;
+}
+
+.catalogo-container {
+    max-width: 1600px;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 3px 25px 4px rgba(0, 0, 0, 0.51);
+    padding: 40px;
+    text-align: center;
+}
+
+.catalogo-container h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #4A2C1D;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.catalogo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0 20px;
+}
+
+/* TARJETA MASCOTA */
+.mascota-card {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 3px 25px 4px rgba(0, 0, 0, 0.51);
+    transition: transform 0.3s ease;
+}
+
+.mascota-card:hover {
+    transform: translateY(-5px);
+}
+
+.mascota-imagen {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+.mascota-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 0 20px 20px;
+}
+
+.estado-adopcion {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #2D5A3D;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.mascota-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.mascota-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #4A2C1D;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.mascota-info p {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.mascota-info p:last-of-type {
+    margin-bottom: 20px;
+}
+
+.btn-adoptar {
+    width: 100%;
+    padding: 12px;
+    background-color: #4A2C1D;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-adoptar:hover {
+    background-color: #6B3D2A;
+}
+
+/* ====== FOOTER ====== */
+.footer {
+    width: 100%;
+    background-color: #283646;
+    color: white;
+    padding: 60px 0 0 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.footer-container {
+    max-width: 1400px;
+    width: 100%;
+    min-width: 320px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 40px;
+    padding: 0 40px 60px 40px;
+    align-items: start;
+}
+
+/* Columna 1: Logo en círculo blanco */
+.footer-columna1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-logo-circle {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.footer-logo-circle img {
+    width: 100px;
+    height: auto;
+}
+
+/* Columna 2: Links, redes, copyright */
+.footer-columna2 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #D5B893;
+}
+
+.footer-redes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.red-social {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.red-social:hover {
+    transform: scale(1.1);
+}
+
+.red-social img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.footer-copyright {
+    text-align: center;
+}
+
+.footer-copyright p {
+    font-size: 14px;
+    margin: 0;
+    color: white;
+}
+
+/* Columna 3: Gato asomándose */
+.footer-columna3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+}
+
+.footer-columna3 img {
+    width: 450px;
+    height: auto;
+}
+
+/* Títulos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Luckiest Guy', cursive;
+}
+
+/* MODALES */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 0;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.5);
+    animation: modalFadeIn 0.3s ease-out;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #4A2C1D;
+}
+
+.modal-body {
+    display: flex;
+    padding: 25px;
+    gap: 25px;
+}
+
+.modal-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-image img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.modal-text h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #4A2C1D;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.modal-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.modal-text h3 {
+    font-size: 20px;
+    margin: 12px 0 6px 0;
+    color: #4A2C1D;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn-cancelar {
+    flex: 1;
+    padding: 12px 20px;
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cancelar:hover {
+    background-color: #aaa;
+}
+
+.btn-solicitar {
+    flex: 1;
+    padding: 12px 20px;
+    background-color: #4A2C1D;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-solicitar:hover {
+    background-color: #6B3D2A;
+}
+
+/* CHECKBOX OCULTO PARA MODAL PURO CSS */
+.modal-toggle {
+    display: none;
+}
+
+.modal-toggle:checked + .modal {
+    display: block;
+}
