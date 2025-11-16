@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - PatitasFelices</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/celular.css">
+</head>
+<body>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <section class="seccion-contacto">
+            <div class="contacto-container">
+                <!-- TARJETA IZQUIERDA -->
+                <div class="contacto-tarjeta">
+                    <img src="img/gato-asomado.png" alt="Gato asomándose">
+                </div>
+
+                <!-- FORMULARIO DERECHA -->
+                <div class="contacto-formulario">
+                    <form action="#" method="post" id="contacto-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
+                        </div>
+                        <div class="form-group">
+                            <select id="tipo-consulta" name="tipo-consulta" required>
+                                <option value="">Tipo de consulta</option>
+                                <option value="adopcion">Adopción</option>
+                                <option value="donacion">Donación</option>
+                                <option value="voluntariado">Voluntariado</option>
+                                <option value="informacion">Información general</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+                        </div>
+                    </form>
+
+                    <!-- INFORMACIÓN DE CONTACTO Y BOTÓN -->
+                    <div class="contacto-bottom-row">
+                        <div class="contacto-info">
+                            <p><strong>Email:</strong> info@patitasfelices.org</p>
+                            <p><strong>Teléfono:</strong> +123 456 7890</p>
+                        </div>
+                        <div class="redes-seleccionadas">
+                            <a href="#" class="red-social"><img src="img/facebook.png" alt="Facebook"></a>
+                            <a href="#" class="red-social"><img src="img/instagram.png" alt="Instagram"></a>
+                        </div>
+                        <button type="submit" class="btn-enviar" form="contacto-form">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Columna 1: Logo en círculo blanco -->
+            <div class="footer-columna1">
+                <div class="footer-logo-circle">
+                    <img src="img/logo.png" alt="Logo Fundación">
+                </div>
+            </div>
+
+            <!-- Columna 2: Links de texto, redes sociales, copyright -->
+            <div class="footer-columna2">
+                <div class="footer-links">
+                    <a href="#">Adopta</a>
+                    <a href="#">Voluntariado</a>
+                    <a href="#">Donaciones</a>
+                    <a href="#">Contacto</a>
+                    <a href="#">Inicio</a>
+                </div>
+                <div class="footer-redes">
+                    <a href="#" class="red-social">
+                        <img src="img/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="#" class="red-social">
+                        <img src="img/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="#" class="red-social">
+                        <img src="img/whatsapp.png" alt="WhatsApp">
+                    </a>
+                    <a href="#" class="red-social">
+                        <img src="img/tiktok.png" alt="TikTok">
+                    </a>
+                    <a href="#" class="red-social">
+                        <img src="img/x.png" alt="X (Twitter)">
+                    </a>
+                </div>
+                <div class="footer-copyright">
+                    <p>Design with © DavidOrozco15 2025. All right reserved</p>
+                </div>
+            </div>
+
+            <!-- Columna 3: Imagen de gato asomándose -->
+            <div class="footer-columna3">
+                <img src="img/gato-asomado.png" alt="Gato asomándose">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
