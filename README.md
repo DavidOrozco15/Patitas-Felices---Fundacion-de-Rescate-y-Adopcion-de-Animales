@@ -8,6 +8,10 @@ El objetivo principal es transmitir la identidad de la fundación, facilitar la 
 
 **Nota:** Este proyecto se realizó una vez que el docente aprobó los wireframes necesarios para iniciar la ejecución en código.
 
+## Wireframes
+
+Puedes ver los wireframes del proyecto en el siguiente enlace: [Figma Wireframes](https://www.figma.com/design/4JG19MVxViSkk8KPygI7Bt/Untitled?node-id=0-1&t=pah8zn4zRugmpHIu-1)
+
 ## Requerimientos Funcionales
 
 ### Página de Inicio (Home)
