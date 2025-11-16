@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo de Mascotas - Patitas Felices</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Raleway:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/catalogo.css">
     <link rel="stylesheet" href="css/tablet.css">
     <link rel="stylesheet" href="css/celular.css">
 </head>
+
 <body>
     <!-- CONTENIDO PRINCIPAL -->
     <main>
@@ -19,7 +22,8 @@
             <div class="intro-container">
                 <div class="intro-columna">
                     <h1>Animales en busca de un hogar</h1>
-                    <p>Cada una de estas historias merece un final feliz. Conoce a los peluditos que actualmente están bajo nuestro cuidado y que están listos para encontrar una familia responsable y amorosa.</p>
+                    <p>Cada una de estas historias merece un final feliz. Conoce a los peluditos que actualmente están
+                        bajo nuestro cuidado y que están listos para encontrar una familia responsable y amorosa.</p>
                     <button class="btn-adoptar-ahora">Adopta ahora 🐾</button>
                     <div class="estadisticas">
                         <div class="estadistica">
@@ -58,7 +62,7 @@
                             <p><strong>Tamaño:</strong> Mediano</p>
                             <p><strong>Raza:</strong> Persa</p>
                             <p>Whiskers es un gato cariñoso y juguetón que busca un hogar amoroso.</p>
-                            <button class="btn-adoptar">Ver perfil</button>
+                            <label for="modal-toggle-1" class="btn-adoptar">Ver perfil</label>
                         </div>
                     </div>
                     <!-- Mascota 2 -->
@@ -73,7 +77,8 @@
                             <p><strong>Tamaño:</strong> Pequeño</p>
                             <p><strong>Raza:</strong> Siamés</p>
                             <p>Mia es una gata energética y sociable que ama jugar con pelotas.</p>
-                            <button class="btn-adoptar">Ver perfil</button>
+                            <label for="modal-toggle" class="btn-adoptar">Ver perfil</label>
+
                         </div>
                     </div>
                     <!-- Mascota 3 -->
@@ -88,7 +93,8 @@
                             <p><strong>Tamaño:</strong> Grande</p>
                             <p><strong>Raza:</strong> Maine Coon</p>
                             <p>Shadow es un gato tranquilo y leal, perfecto para familias.</p>
-                            <button class="btn-adoptar">Ver perfil</button>
+                            <label for="modal-toggle" class="btn-adoptar">Ver perfil</label>
+
                         </div>
                     </div>
                     <!-- Mascota 4 -->
@@ -103,7 +109,8 @@
                             <p><strong>Tamaño:</strong> Mediano</p>
                             <p><strong>Raza:</strong> Bengalí</p>
                             <p>Luna es una gata activa y curiosa, ideal para hogares dinámicos.</p>
-                            <button class="btn-adoptar">Ver perfil</button>
+                            <label for="modal-toggle" class="btn-adoptar">Ver perfil</label>
+
                         </div>
                     </div>
                     <!-- Mascota 5 -->
@@ -118,7 +125,8 @@
                             <p><strong>Tamaño:</strong> Grande</p>
                             <p><strong>Raza:</strong> Ragdoll</p>
                             <p>Tiger es un gato relajado y afectuoso, perfecto para familias con niños.</p>
-                            <button class="btn-adoptar">Ver perfil</button>
+                            <label for="modal-toggle" class="btn-adoptar">Ver perfil</label>
+
                         </div>
                     </div>
                     <!-- Mascota 6 -->
@@ -133,7 +141,8 @@
                             <p><strong>Tamaño:</strong> Mediano</p>
                             <p><strong>Raza:</strong> Abisinio</p>
                             <p>Simba es un gato inteligente y juguetón, amante de la exploración.</p>
-                            <button class="btn-adoptar">Ver perfil</button>
+                            <label for="modal-toggle" class="btn-adoptar">Ver perfil</label>
+
                         </div>
                     </div>
                     <!-- Mascota 7 -->
@@ -148,7 +157,8 @@
                             <p><strong>Tamaño:</strong> Pequeño</p>
                             <p><strong>Raza:</strong> Scottish Fold</p>
                             <p>Nala es una gata dulce y cariñosa, ideal para personas mayores.</p>
-                            <button class="btn-adoptar">Ver perfil</button>
+                            <label for="modal-toggle" class="btn-adoptar">Ver perfil</label>
+
                         </div>
                     </div>
                     <!-- Mascota 8 -->
@@ -163,7 +173,8 @@
                             <p><strong>Tamaño:</strong> Pequeño</p>
                             <p><strong>Raza:</strong> British Shorthair</p>
                             <p>Oliver es un gatito juguetón y sociable, perfecto para familias jóvenes.</p>
-                            <button class="btn-adoptar">Ver perfil</button>
+                            <label for="modal-toggle" class="btn-adoptar">Ver perfil</label>
+
                         </div>
                     </div>
                     <!-- Mascota 9 -->
@@ -178,13 +189,42 @@
                             <p><strong>Tamaño:</strong> Mediano</p>
                             <p><strong>Raza:</strong> Sphynx</p>
                             <p>Chloe es una gata sin pelo, cariñosa y llena de energía.</p>
-                            <button class="btn-adoptar">Ver perfil</button>
+                            <label for="modal-toggle" class="btn-adoptar">Ver perfil</label>
+
                         </div>
                     </div>
                     <!-- Más mascotas pueden agregarse aquí -->
                 </div>
             </div>
         </section>
+        <!-- MODAL PARA WHISKERS -->
+        <input type="checkbox" id="modal-toggle-1" class="modal-toggle">
+        <div class="modal">
+            <div class="modal-content">
+                <label for="modal-toggle-1" class="close">&times;</label>
+                <div class="modal-body">
+                    <div class="modal-image">
+                        <img src="img/gato-asomado.png" alt="Whiskers">
+                    </div>
+                    <div class="modal-text">
+                        <h2>Whiskers</h2>
+                        <p><strong>Edad:</strong> 2 años | <strong>Sexo:</strong> Macho | <strong>Tamaño:</strong> Mediano</p>
+                        <p><strong>Raza:</strong> Persa | <strong>Estado:</strong> En adopción</p>
+                        <h3>Historia</h3>
+                        <p>Whiskers fue encontrado abandonado en una calle lluviosa. Después de ser rescatado, ha mostrado una personalidad cariñosa y juguetona, adaptándose rápidamente a la vida en el refugio.</p>
+                        <h3>Salud</h3>
+                        <p>Completamente vacunado, desparasitado y esterilizado. Salud excelente, sin problemas médicos conocidos.</p>
+                        <h3>Comportamiento</h3>
+                        <p>Muy sociable con humanos y otros animales. Le encanta jugar con juguetes y recibir caricias. Ideal para familias con niños o parejas.</p>
+                        <div class="modal-buttons">
+                            <label for="modal-toggle-1" class="btn-cancelar">Cancelar</label>
+                            <button class="btn-solicitar">Solicitar Adopción</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <footer class="footer">
@@ -234,4 +274,5 @@
         </div>
     </footer>
 </body>
+
 </html>
