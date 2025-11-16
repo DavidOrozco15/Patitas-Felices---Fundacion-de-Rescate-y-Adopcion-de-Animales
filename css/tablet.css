@@ -3,6 +3,18 @@
    768px a 1199px
 =========================== */
 @media (max-width: 1024px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 
     /* CATALOGO */
     .catalogo-grid {
@@ -45,8 +57,40 @@
     }
 
     /* SECCION INTRO */
+    .intro-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+
     .intro-columna img {
         display: none;
+    }
+
+    .intro-columna h1 {
+        font-size: 48px;
+    }
+
+    .intro-columna p {
+        font-size: 18px;
+    }
+
+    .intro-buttons {
+        justify-content: center;
+    }
+
+    .btn-adoptar-ahora {
+        font-size: 18px;
+        padding: 16px 30px;
+    }
+
+    .estadisticas {
+        gap: 25px;
+        justify-content: center;
+    }
+
+    .numero {
+        font-size: 36px;
     }
 
     /* HEADER CONTACTO */
@@ -56,6 +100,8 @@
 
     .header-container {
         padding: 0 15px;
+        flex-direction: column;
+        gap: 8px;
     }
 
     .header-logo img {
@@ -194,13 +240,14 @@
 
     /* COLUMNA 2 - CARRUSEL */
     .contenedor-carrusel {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: 12px;
     }
 
     .columna-1,
     .columna-2 {
-        width: 48%;
-        height: 380px;
+        height: 300px;
     }
 
     .carrusel {
@@ -208,7 +255,7 @@
     }
 
     .carrusel img {
-        height: 150px;
+        height: 120px;
     }
 
     /* SECCION 3 - SOMOS */
@@ -330,6 +377,12 @@
 
 .footer-copyright p {
     font-size: 12px;
+}
+
+.footer-columna3 {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
 }
 
 .footer-columna3 img {

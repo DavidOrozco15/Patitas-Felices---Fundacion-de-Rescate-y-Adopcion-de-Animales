@@ -3,9 +3,19 @@
 body {
     font-family: 'Raleway', sans-serif;
     min-width: 320px;
-    background-color: black;
+    background-color: #D5B893;
     /* Límite mínimo global */
     overflow-x: hidden;
+}
+
+/* Títulos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Luckiest Guy', cursive;
 }
 
 /* ====== HERO GENERAL ====== */
@@ -87,6 +97,13 @@ body {
     height: 60px;
     align-self: center;
     box-shadow: 0px 3px 25px 4px rgba(0, 0, 0, 0.51);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
 }
 
 /* ====== CONTENEDOR GENERAL ====== */
@@ -121,6 +138,7 @@ body {
 }
 
 .dias-texto h2 {
+    font-family: 'Luckiest Guy', cursive;
     font-size: 32px;
     margin-bottom: 20px;
     text-align: center;
@@ -280,6 +298,7 @@ body {
 }
 
 .mision-texto h2, .vision-texto h2 {
+    font-family: 'Luckiest Guy', cursive;
     font-size: 28px;
     margin-bottom: 15px;
     color: white;
@@ -387,6 +406,7 @@ body {
     width: 180px;
     height: auto;
     display: block;
+    border-radius: 20px;
 }
 
 /* ====== SECCION GALERIA ====== */

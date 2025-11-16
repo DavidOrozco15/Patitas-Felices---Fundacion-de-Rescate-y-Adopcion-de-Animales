@@ -2,8 +2,26 @@
 body {
     font-family: 'Raleway', sans-serif;
     min-width: 320px;
-    background-color: black;
+    background-color: #D5B893;
     /* Límite mínimo global */
+    overflow-x: hidden;
+}
+
+.btn-volver {
+    background-color: #4A2C1D;
+    color: white;
+    padding: 18px 35px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 40px;
+}
+
+.btn-volver:hover {
+    background-color: #6B3D2A;
 }
 
 /* HEADER CONTACTO */
