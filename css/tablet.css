@@ -1,0 +1,339 @@
+/* ===========================
+   RESPONSIVE – TABLET
+   768px a 1199px
+=========================== */
+@media (max-width: 1024px) {
+
+    /* CATALOGO */
+    .catalogo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .catalogo-container {
+        padding: 30px;
+    }
+
+    .catalogo-container h1 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .mascota-card {
+        max-width: 100%;
+    }
+
+    .mascota-imagen {
+        height: 160px;
+    }
+
+    .mascota-info {
+        padding: 15px;
+    }
+
+    .mascota-info h3 {
+        font-size: 18px;
+    }
+
+    .mascota-info p {
+        font-size: 13px;
+    }
+
+    .btn-adoptar {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    /* SECCION INTRO */
+    .intro-columna img {
+        display: none;
+    }
+
+    /* HEADER CONTACTO */
+    .header-contacto {
+        padding: 8px 0;
+    }
+
+    .header-container {
+        padding: 0 15px;
+    }
+
+    .header-logo img {
+        width: 120px;
+    }
+
+    .header-nav {
+        gap: 12px;
+    }
+
+    .header-btn {
+        font-size: 13px;
+        padding: 7px 14px;
+    }
+
+    /* SECCION CONTACTO */
+    .seccion-contacto {
+        padding: 40px 0;
+    }
+
+    .contacto-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .contacto-tarjeta {
+        height: 400px;
+    }
+
+    .contacto-formulario {
+        padding: 30px;
+        height: auto;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .contacto-formulario h1 {
+        font-size: 32px;
+        margin-bottom: 25px;
+    }
+
+    .contacto-bottom-row {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .redes-seleccionadas {
+        justify-content: flex-start;
+    }
+
+    .btn-enviar {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 40px 0;
+        height: auto;
+        /* Se adapta al contenido */
+    }
+
+    .hero-container {
+        max-width: 900px;
+        /* Reduce el ancho */
+        height: auto;
+        /* Evita desbordes */
+        padding: 0 20px;
+        gap: 20px;
+        /* Menos espacio entre columnas */
+    }
+
+    /* COLUMNA IZQUIERDA */
+    .hero-ellipse {
+        width: 330px;
+        height: 330px;
+    }
+
+    .hero-ellipse img {
+        width: 80%;
+    }
+
+    /* COLUMNA DERECHA */
+    .hero-right {
+        margin-top: 0;
+        /* Esto evita que se salga */
+        gap: 12px;
+    }
+
+    .hero-logo {
+        width: 260px;
+    }
+
+    .hero-slogan {
+        font-size: 26px;
+    }
+
+    .hero-btn {
+        font-size: 16px;
+        padding: 10px 22px;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    /* SECCION 2 - DÍAS LLENOS DE PATITAS */
+    .seccion-dias {
+        padding: 15px 0;
+    }
+
+    .seccion-dias-container {
+        max-width: 900px;
+        padding: 0 20px;
+        gap: 20px;
+    }
+
+    /* COLUMNA 1 - TEXTO */
+    .dias-texto {
+        padding: 40px 20px;
+        max-width: 280px;
+    }
+
+    .dias-texto h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .dias-texto p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    /* COLUMNA 2 - CARRUSEL */
+    .contenedor-carrusel {
+        gap: 12px;
+    }
+
+    .columna-1,
+    .columna-2 {
+        width: 48%;
+        height: 380px;
+    }
+
+    .carrusel {
+        gap: 8px;
+    }
+
+    .carrusel img {
+        height: 150px;
+    }
+
+    /* SECCION 3 - SOMOS */
+    .seccion-somos {
+        padding: 20px 0;
+    }
+
+    .seccion-somos-container {
+        padding: 0 20px;
+        gap: 30px;
+    }
+
+    .somos-texto p {
+        font-size: 22px;
+    }
+
+    .animales-destacados {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 15px;
+    }
+
+    .animal-card {
+        width: 60px;
+        height: 60px;
+    }
+
+    .acciones-botones {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        max-width: 500px;
+    }
+
+    .boton-accion img {
+        width: 180px;
+    }
+
+    /* SECCION 4 - MISIÓN-VISIÓN */
+    .seccion-mision-vision {
+        padding: 80px 0;
+    }
+
+    .seccion-mision-vision-container {
+        max-width: 1100px;
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+        gap: 20px;
+    }
+
+.mision-texto, .vision-texto {
+    padding: 30px 15px;
+    max-width: 350px;
+    justify-self: center;
+}
+
+.mision-texto h2, .vision-texto h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.mision-texto p, .vision-texto p {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* SECCION GALERIA */
+.seccion-galeria {
+    padding: 60px 0;
+}
+
+.galeria-container {
+    max-width: 1100px;
+    padding: 0 20px;
+    gap: 15px;
+}
+
+.galeria-izquierda img,
+.galeria-derecha img {
+    border-radius: 8px;
+}
+
+/* FOOTER */
+.footer {
+    padding: 40px 0;
+}
+
+.footer-container {
+    max-width: 1100px;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.footer-logo-circle {
+    width: 120px;
+    height: 120px;
+}
+
+.footer-logo-circle img {
+    width: 80px;
+}
+
+.footer-links {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.footer-links a {
+    font-size: 14px;
+}
+
+.footer-redes {
+    gap: 15px;
+}
+
+.red-social {
+    width: 35px;
+    height: 35px;
+}
+
+.footer-copyright p {
+    font-size: 12px;
+}
+
+.footer-columna3 img {
+    width: 150px;
+}
+
+}
