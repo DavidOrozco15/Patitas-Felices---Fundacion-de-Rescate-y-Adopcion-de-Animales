@@ -113,7 +113,8 @@ body {
     box-shadow: 0px 3px 25px 4px rgba(0, 0, 0, 0.51);
 }
 
-.contacto-tarjeta img {
+.contacto-tarjeta img,
+.contacto-tarjeta video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -125,13 +126,17 @@ body {
     height: 460px;
     display: flex;
     flex-direction: column;
+    background-color: #632024;
+    border-radius: 20px;
+    box-shadow: 0px 3px 25px 4px rgba(0, 0, 0, 0.51);
+    color: white;
 }
 
 .contacto-formulario h1 {
     font-size: 36px;
     margin-bottom: 20px;
     text-align: center;
-    color: #4A2C1D;
+    color: white;
 }
 
 .form-row {
@@ -155,8 +160,9 @@ body {
     width: 100%;
     padding: 10px 0;
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     background-color: transparent;
+    color: white;
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
     transition: border-color 0.3s ease;
@@ -166,31 +172,16 @@ body {
 .form-group input:placeholder-shown,
 .form-group select:placeholder-shown,
 .form-group textarea:placeholder-shown {
-    border-bottom-color: black; /* Negro para campos vacíos */
+    border-bottom-color: white; /* Negro para campos vacíos */
 }
 
 /* Color de placeholders */
 .form-group input::placeholder,
 .form-group select::placeholder,
 .form-group textarea::placeholder {
-    color: black;
+    color: white;
 }
 
-/* Estado de error */
-.form-group input.error,
-.form-group select.error,
-.form-group textarea.error {
-    border-bottom-color: #e74c3c; /* Rojo para error */
-    background-color: rgba(231, 76, 60, 0.1); /* Fondo rojo claro */
-}
-
-/* Estado de éxito */
-.form-group input.success,
-.form-group select.success,
-.form-group textarea.success {
-    border-bottom-color: #27ae60; /* Verde para éxito */
-    background-color: rgba(39, 174, 96, 0.1); /* Fondo verde claro */
-}
 
 .form-group input:focus,
 .form-group select:focus,
@@ -208,12 +199,12 @@ body {
 .btn-enviar {
     width: 100%;
     padding: 12px;
-    background-color: #4A2C1D;
-    color: white;
+    background-color: #D5B893;
+    color: black;
     border: none;
     border-radius: 10px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 600;   
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 15px;
@@ -226,7 +217,8 @@ body {
 }
 
 .btn-enviar:hover {
-    background-color: #6B3D2A;
+    background-color: #283646;
+    color: white;
 }
 
 /* INFORMACIÓN DE CONTACTO Y BOTÓN */
