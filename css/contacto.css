@@ -1,23 +1,39 @@
 /* Texto general */
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     min-width: 320px;
     background-color: #D5B893;
     /* Límite mínimo global */
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .btn-volver {
     background-color: #4A2C1D;
     color: white;
-    padding: 18px 35px;
+    padding: 12px 20px;
     border: none;
     border-radius: 30px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-bottom: 40px;
+    margin-top: 20px;
+    width: auto;
+    max-width: 150px;
+    margin-left: 20px;
+    margin-right: auto;
 }
 
 .btn-volver:hover {
@@ -282,6 +298,7 @@ h6 {
     display: flex;
     justify-content: center;
     position: relative;
+    margin-top: auto;
 }
 
 .footer-container {
