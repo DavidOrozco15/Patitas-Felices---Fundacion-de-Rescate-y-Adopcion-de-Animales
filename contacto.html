@@ -19,7 +19,10 @@
             <div class="contacto-container">
                 <!-- TARJETA IZQUIERDA -->
                 <div class="contacto-tarjeta">
-                    <img src="/img/perrocontacto.jpg" alt="Gato asomándose">
+                    <video autoplay muted loop>
+                        <source src="img/fondo-contacto.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento video.
+                    </video>
                 </div>
 
                 <!-- FORMULARIO DERECHA -->
@@ -42,7 +45,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
+                            <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" maxlength="10" required>
                         </div>
                         <div class="form-group">
                             <select id="tipo-consulta" name="tipo-consulta" required>
@@ -55,7 +58,7 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+                            <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required minlength="10" maxlength="100"></textarea>
                         </div>
                     </form>
 
